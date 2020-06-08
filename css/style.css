@@ -1,0 +1,798 @@
+/* Общие стили. Каркас */
+
+@font-face {
+    font-family: "Geometria";
+    src: url("fonts/Geometria.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Geometria-LightItalic";
+    src: url("fonts/Geometria-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Geometria-HeavyItalic";
+    src: url("fonts/Geometria-HeavyItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: "Philosopher";
+    src: url("fonts/Philosopher-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+  
+/* Стилизация контента */
+
+.container {
+    width: 1440px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-left {
+    width: 50%;
+    min-height: 800px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fefefe;
+    z-index: 0;
+}
+
+.bg-left::after {
+    content: '';
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0px 0px 99px rgba(0, 0, 0, 0.1);
+}
+
+.bg-right {
+    width: 50%;
+    min-height: 800px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color:#ffffff;
+    box-shadow: 0px 0px 99px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    padding-top: 35px;
+    min-height: 97px;
+    position: relative;
+    z-index: 10;
+}
+
+.header__nav {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header__logo {
+    display: block;
+    width: 23px;
+    height: 23px;
+}
+
+.header__burger {
+    width: 54px;
+    height: 54px;
+    top: 65px;
+    right: 44px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    padding: 0;
+}
+
+.burger__rect1,
+.burger__rect2,
+.burger__rect3 {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+}
+
+.burger__rect1 {
+    top: 20px;
+    right: 17px;
+}
+
+.burger__rect2 {
+    top: 26px;
+    right: 17px;
+}
+
+.burger__rect3 {
+    top: 32px;
+    right: 17px;
+}
+
+.main {
+    min-height: 577px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: -22px;
+}
+
+.main__blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 89%;
+    position: relative;
+}
+
+.left-text {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-text p {
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin: 0;
+    font-family: Geometria;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 12px;
+    text-align: left;
+    color: #000;
+    opacity: 0.4;
+    text-transform: lowercase;
+    position: absolute;
+    top: 393px;
+    left: -28px;
+    font-family: Geometria;
+    letter-spacing: 0.04em;
+}
+
+.main__block1 {
+    width: 62.5%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main__block1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7e611;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.block1__trapeze {
+    position: absolute;
+    top: 169px;
+    left: 269px;
+    z-index: 3;
+}
+
+.main__block2 {
+    width: 67.2%;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 87px;
+}
+
+.main__block2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7e611;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.block2__circle {
+    position: absolute;
+    top: 32px;
+    left: 86px;
+    z-index: 3; 
+}
+
+.block2__circle-text {
+    font-family: "Geometria";
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 64px;
+    left: 109px;
+    width: 10%;
+    z-index: 2;
+}
+
+.block2__rect {
+    position: absolute;
+    top: 72px;
+    right: 199px;
+    width: 138px;
+    height: 383px;
+    background: #f7e611;
+    box-shadow: 0px 0px 88px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    padding-left: 20px;  
+    z-index: 2;  
+}
+
+.rect__big {
+    font-family: "Geometria";
+    font-weight: 900;
+    font-style: italic;
+    font-size: 45px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #000;
+}
+
+.rect__big::after {
+    content: '';
+    width: 17px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: 42px;
+    right: 45px;
+}
+
+.rect__small {
+    font-family: "Geometria";
+    font-weight: 900;
+    font-style: italic;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    line-height: 56px;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    right: 52px;
+}
+
+.block1__img img,
+.block2__img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.block1__img {
+    height: 525px;
+}
+
+.block1__number-1 {
+    font-family: "Geometria";
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    top: 85px;
+    left: 143px;
+    z-index: 2;
+}
+
+.block1__number-3 {
+    font-family: "Geometria";
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    top: 165px;
+    left: 143px;
+    z-index: 2;
+}
+
+.block1__number-51 {
+    transform: rotate(-90deg);
+    font-family: "Geometria";
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 31px;
+    right: 287px;
+    z-index: 2;
+}
+
+.block2__btn {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.block2__btn--left {
+    bottom: 150px;
+    right: 357px;
+}
+
+.block2__btn--right {
+    bottom: 150px;
+    right: 161px;
+}
+
+.main__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 227px;
+}
+
+.main__logo {
+    margin-right: 5px;
+    margin-bottom: 106px;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+
+.main__sign {
+    position: relative;
+    z-index: 4; 
+}
+
+.main__title p {
+    font-family: "Philosopher";
+    font-weight: normal;
+    font-style: italic;
+    font-size: 9px;
+    text-align: left;
+    color: #000000;
+    opacity: 0.5;
+    text-transform: lowercase;
+    display: inline-block;
+    transform: rotate(-90deg);
+    margin: 0;
+    position: absolute;
+    top: 385px;
+    left: 202px;
+    z-index: 4;
+}
+
+.block2__letter--a {
+    top: -130px;
+    right: 319px;
+    position: absolute;
+}
+
+.block2__letter--e {
+    top: -48px;
+    right: 154px;
+    position: absolute;
+    z-index: -1;
+}
+
+.block2__letter--g {
+    top: 30px;
+    right: 234px;
+    position: absolute;
+    z-index: 1;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__left {
+    margin-left: -25px;
+}
+
+.footer__right {
+    margin-left: -44px;
+}
+
+/* Интерактивные классы */
+.block2__img {
+    display: none;
+    height: 490px;
+}
+
+.gallery__picture {
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.gallery__static-picture {
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.active {
+    display: block;
+}
+
+.header__logo:hover {
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.block2__btn svg:hover {
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.block2__btn svg:active {
+    transform: scale(0.5);
+    transition: all ease 0.3s;
+}
+
+.footer__sign {
+    display: none;
+}
+
+.block2__triangle-stroke,
+.block2__triangle-fill {
+    display: none;
+}
+
+/* Медиа выражения */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .bg-left::after {
+        width: 304px;
+    }
+
+    .main {
+        margin-bottom: 10px;
+    }
+
+    .main__blocks {
+        width: 81%;
+    }
+
+    .main__block2 {
+        top: 174px;
+    }
+
+    .main__title {
+        padding-top: 50%;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .block2__rect {
+        width: 100px;
+        height: 100px;
+        top: 360px;
+        right: 50px;
+        padding-left: 22px;
+        padding-bottom: 38px;
+    }
+
+    .rect__big::after {
+        bottom: 35px
+    }
+
+    .rect__small {
+        bottom: -13px;
+        right: 50%;
+    }
+
+    .bg-right {
+        height: 950px;
+    }
+
+    .bg-left {
+        height: 950px;
+    }
+
+    .footer {
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .footer__left {
+        margin: 0;
+    }
+
+    .footer__right {
+        margin: 0;
+    }
+
+    .header__burger {
+        top: 62px; 
+    }
+
+    .main__sign {
+        width: 170px;
+    }
+
+    .main__logo {
+        margin-bottom: 115px;
+    }
+
+    .block2__btn--left {
+        top: 399px;
+        right: 163px;
+    }
+
+    .block2__btn--right {
+        top: 399px;
+        right: 20px;
+    }
+
+    .block1__number-1 {
+        left: 30px;
+    }
+
+    .block1__number-3 {
+        left: 30px;
+    }
+
+    .block1__number-51 {
+        right: 80px;
+    }
+
+    .block2__letter--a {
+        right: 100px;
+    }
+
+    .block2__letter--e {
+        right: 0;
+    }
+
+    .block2__letter--g {
+        right: 65px;
+        top: 315px;
+    }
+
+    .main__title p {
+        top: 452px;
+        left: 32px;
+    }
+
+    .block2__circle {
+        top: 0;
+        left: 10px;
+        width: 80px;
+    }
+
+    .block2__circle-text {
+        top: 33px;
+        left: 24px;
+    }
+
+    .block1__trapeze {
+        width: 100px;
+        top: 250px;
+        left: 150px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+    .container {
+        width: 320px;
+        background-color:#F7E611;
+        overflow: hidden;
+    }
+
+    .main {
+       align-items: unset;
+       min-height: 461px; 
+    }
+
+    .main__block2::before {
+        opacity: 0.6;
+    }
+
+    .bg-left,
+    .bg-right,
+    .left-text,
+    .main__title svg,
+    .footer__right,
+    .footer__left,
+    .rect__small,
+    .block2__circle,
+    .block2__circle-text,
+    .rect__big::after,
+    .header__burger svg,
+    .block1__content span {
+        display: none;
+    }
+
+    .header {
+        padding-top: 16px;
+    }
+
+    .header__nav {
+        width: 88%;
+    }
+
+    .header__burger {
+        top: -16px;
+        right: -16px;
+    }
+
+    .main__blocks {
+        width: 100%;
+    }
+
+    .main__block1 {
+        width: 85.5%;
+        top: -13px;
+        left: -39px;
+    }
+
+    .main__block2 {
+        width: 100%;
+        top: 153px;
+        z-index: 1;
+    }
+
+    .block1__trapeze {
+        width: 100%;
+        transform: rotate(90deg);
+        top: -179px;
+        left: 210px;
+    }
+
+    .block1__img {
+        height: 184px;
+    }
+
+    .block2__img {
+        height: 318px;
+    }
+
+    .block2__letter--a {
+        width: 47px;
+        right: 204px;
+        top: -27px;
+        z-index: 2;
+    }
+
+    .block2__letter--e {
+        width: 40px;
+        right: 62px;
+        top: -121px;
+    }
+
+    .block2__letter--g {
+        width: 46px;
+        right: 126px;
+        top: -44px;
+        z-index: -1;
+    }
+
+    .block2__btn--left {
+        top: 144px;
+        right: 280px;
+    }
+
+    .block2__btn--right {
+        top: 144px;
+        right: 20px;
+    }
+
+    .block2__rect {
+        width: 148px;
+        height: 148px;
+        top: 245px;
+        right: -74px;
+        transform: rotate(45deg);
+        padding: 0;
+        box-shadow: none
+    }
+
+    .block2__triangle-fill {
+        display: block;
+        position: absolute;
+        top: -23px;
+        right: 28px;
+    }
+
+    .block2__triangle-stroke {
+        display: block;
+        position: absolute;
+        bottom: 29px;
+        left: 44px;
+        z-index: 2;
+    }
+
+    .rect__big {
+        transform: rotate(-45deg);
+        font-family: Geometria;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #000;
+        position: absolute;
+        right: 106px;
+        top: 62px;
+    }
+
+    .footer {
+        position: relative;
+        top: -84px;
+        z-index: 1;
+    }
+
+    .footer__sign {
+        display: block;
+        width: 144px;
+        position: absolute;
+        top: 0;
+        left: 151px;
+        transform: translateX(-50%);
+    }
+
+    .main__title p {
+        top: 143px;
+        left: -20px; 
+    }
+}
+
+
