@@ -1,35 +1,51 @@
 /* Общие стили. Каркас */
 
 @font-face {
-    font-family: "Geometria";
-    src: url("fonts/Geometria.woff") format("woff");
-    font-weight: 400;
+    font-family: 'Geometria', sans-serif;
+    src: url('fonts/geometria/Geometria-Regular.woff2') format('woff2'), 
+         url('fonts/geometria/Geometria-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
-    font-family: "Geometria-LightItalic";
-    src: url("fonts/Geometria-LightItalic.woff") format("woff");
+    font-family: 'Geometria', sans-serif;
+    src: url('fonts/geometria/Geometria-LightItalic.woff2') format('woff2'), 
+         url('fonts/geometria/Geometria-LightItalic.woff') format('woff');
     font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: "Geometria-HeavyItalic";
-    src: url("fonts/Geometria-HeavyItalic.woff") format("woff");
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
+    font-family: 'Geometria', sans-serif;
+    src: url('fonts/geometria/Geometria-HeavyItalic.woff2') format('woff2'), 
+         url('fonts/geometria/Geometria-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
 }
-  
+
 @font-face {
-    font-family: "Philosopher";
-    src: url("fonts/Philosopher-Regular.woff") format("woff");
-    font-weight: 400;
+    font-family: 'Philosopher', sans-serif;
+    src: url('fonts/philosopher/Philosopher-Regular.woff2') format('woff2'), 
+         url('fonts/philosopher/Philosopher-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Philosopher', sans-serif;
+    src: url('fonts/philosopher/Philosopher-Italic.woff2') format('woff2'), 
+         url('fonts/philosopher/Philosopher-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Philosopher', sans-serif;
+    src: url('fonts/philosopher/Philosopher-Bold.woff2') format('woff2'), 
+         url('fonts/philosopher/Philosopher-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 
 *,
@@ -190,7 +206,7 @@ body {
             transform: rotate(-90deg);
     display: inline-block;
     margin: 0;
-    font-family: Geometria;
+    font-family: 'Geometria', sans-serif;
     font-weight: 300;
     font-style: italic;
     font-size: 12px;
@@ -201,7 +217,6 @@ body {
     position: absolute;
     top: 393px;
     left: -28px;
-    font-family: Geometria;
     letter-spacing: 0.04em;
 }
 
@@ -259,7 +274,7 @@ body {
 }
 
 .block2__circle-text {
-    font-family: "Geometria";
+    font-family: 'Geometria', sans-serif;
     font-weight: normal;
     font-size: 17px;
     letter-spacing: 2px;
@@ -295,7 +310,7 @@ body {
 }
 
 .rect__big {
-    font-family: "Geometria";
+    font-family: 'Geometria', sans-serif;
     font-weight: 900;
     font-style: italic;
     font-size: 45px;
@@ -315,7 +330,7 @@ body {
 }
 
 .rect__small {
-    font-family: "Geometria";
+    font-family: 'Geometria', sans-serif;
     font-weight: 900;
     font-style: italic;
     font-size: 17px;
@@ -341,7 +356,7 @@ body {
 }
 
 .block1__number-1 {
-    font-family: "Geometria";
+    font-family: 'Geometria', sans-serif;
     font-weight: 300;
     font-size: 14px;
     text-align: center;
@@ -353,7 +368,7 @@ body {
 }
 
 .block1__number-3 {
-    font-family: "Geometria";
+    font-family: 'Geometria', sans-serif;
     font-weight: 300;
     font-size: 14px;
     text-align: center;
@@ -367,7 +382,7 @@ body {
 .block1__number-51 {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
-    font-family: "Geometria";
+    font-family: 'Geometria', sans-serif;
     font-weight: 900;
     font-size: 28px;
     letter-spacing: 3px;
@@ -428,7 +443,7 @@ body {
 }
 
 .main__title p {
-    font-family: "Philosopher";
+    font-family: 'Philosopher', sans-serif;
     font-weight: normal;
     font-style: italic;
     font-size: 9px;
