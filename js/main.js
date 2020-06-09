@@ -2,10 +2,7 @@ const backSide = document.querySelector('.block1__img img'),
       slidesWrapper = document.querySelectorAll('.block2__img'),
       slides = document.querySelectorAll('.block2__img img'),
       leftButton = document.querySelector('.block2__btn--left'),
-      rightButton = document.querySelector('.block2__btn--right'),
-      windowWidth = document.documentElement.clientWidth;
-
-console.log(windowWidth);
+      rightButton = document.querySelector('.block2__btn--right');
 
 let index = 0,
     backSideTimeout = 300,
@@ -73,17 +70,5 @@ const prevSlide = () => {
     }
 }
 
-if (windowWidth > 768) {
-    rightButton.addEventListener('click',  nextSlide);
-    leftButton.addEventListener('click', prevSlide);
-} else {
-    const manager = new Hammer.Manager(rightButton);
-    const tap = new Hammer.Tap({
-        taps: 1
-    });
-    manager.add(Tap);
-    manager.on('tap', function(e) {
-        nextSlide();
-      });
-}
-
+rightButton.addEventListener('click',  nextSlide);
+leftButton.addEventListener('click', prevSlide);
