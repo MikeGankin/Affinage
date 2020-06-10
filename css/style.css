@@ -2,55 +2,112 @@
 
 @font-face {
     font-family: 'Geometria', sans-serif;
-    src: url('fonts/geometria/Geometria.woff2') format('woff2'), 
-            url('fonts/geometria/Geometria.woff') format('woff'),
-            url('fonts/geometria/Geometria.otf') format('otf');
+    src: url('fonts/geometria.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('fonts/geometria.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/geometria.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('fonts/geometria.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/geometria.svg#geometria') format('svg');
+    /* Chrome < 4, Legacy iOS */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Geometria', sans-serif;
-    src: url('fonts/geometria/Geometria-LightItalic.woff2') format('woff2'), 
-            url('fonts/geometria/Geometria-LightItalic.woff') format('woff'),
-            url('fonts/geometria/Geometria-LightItalic.otf') format('otf');
+    src: url('fonts/geometria-medium.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('fonts/geometria-medium.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/geometria-medium.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('fonts/geometria-medium.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/geometria-medium.svg#geometria-medium') format('svg');
+    /* Chrome < 4, Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria', sans-serif;
+    src: url('fonts/geometria-lightitalic.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('fonts/geometria-lightitalic.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/geometria-lightitalic.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('fonts/geometria-lightitalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/geometria-lightitalic.svg#geometria-lightitalic') format('svg');
+    /* Chrome < 4, Legacy iOS */
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Geometria', sans-serif;
-    src: url('fonts/geometria/Geometria-HeavyItalic.woff2') format('woff2'), 
-            url('fonts/geometria/Geometria-HeavyItalic.woff') format('woff'),
-            url('fonts/geometria/Geometria-HeavyItalic.otf') format('otf');
+    src: url('fonts/geometria-heavyitalic.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('fonts/geometria-heavyitalic.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/geometria-heavyitalic.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('fonts/geometria-heavyitalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/geometria-heavyitalic.svg#geometria-heavyitalic') format('svg');
+    /* Chrome < 4, Legacy iOS */
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Philosopher', sans-serif;
-    src: url('fonts/philosopher/Philosopher-Regular.woff2') format('woff2'), 
-            url('fonts/philosopher/Philosopher-Regular.woff') format('woff'),
-            url('fonts/philosopher/Philosopher-Regular.ttf') format('ttf');
+    src: url('fonts/philosopher.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('fonts/philosopher.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/philosopher.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('fonts/philosopher.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/philosopher.svg#philosopher') format('svg');
+    /* Chrome < 4, Legacy iOS */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Philosopher', sans-serif;
-    src: url('fonts/philosopher/Philosopher-Italic.woff2') format('woff2'), 
-            url('fonts/philosopher/Philosopher-Italic.woff') format('woff'),
-            url('fonts/philosopher/Philosopher-Italic.ttf') format('ttf');
+    src: url('fonts/philosopher_italic.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('fonts/philosopher_italic.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/philosopher_italic.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('fonts/philosopher_italic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/philosopher_italic.svg#philosopher_italic') format('svg');
+    /* Chrome < 4, Legacy iOS */
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Philosopher', sans-serif;
-    src: url('fonts/philosopher/Philosopher-Bold.woff2') format('woff2'), 
-            url('fonts/philosopher/Philosopher-Bold.woff') format('woff'),
-            url('fonts/philosopher/Philosopher-Bold.ttf') format('ttf');
-    font-weight: bold;
+    src: url('fonts/philosopher_bold.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('fonts/philosopher_bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/philosopher_bold.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('fonts/philosopher_bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/philosopher_bold.svg#philosopher_bold') format('svg');
+    /* Chrome < 4, Legacy iOS */
     font-weight: bold;
     font-style: normal;
 }
@@ -428,18 +485,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 227px;
 }
 
 .main__logo {
     margin-right: 5px;
     margin-bottom: 106px;
-    width: 100%;
     position: relative;
     z-index: 4;
 }
