@@ -2,8 +2,9 @@
 
 @font-face {
     font-family: 'Geometria', sans-serif;
-    src: url('fonts/geometria/Geometria-Regular.woff2') format('woff2'), 
-         url('fonts/geometria/Geometria-Regular.woff') format('woff');
+    src: url('fonts/geometria/Geometria.woff2') format('woff2'), 
+            url('fonts/geometria/Geometria.woff') format('woff'),
+            url('fonts/geometria/Geometria.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +12,8 @@
 @font-face {
     font-family: 'Geometria', sans-serif;
     src: url('fonts/geometria/Geometria-LightItalic.woff2') format('woff2'), 
-         url('fonts/geometria/Geometria-LightItalic.woff') format('woff');
+            url('fonts/geometria/Geometria-LightItalic.woff') format('woff'),
+            url('fonts/geometria/Geometria-LightItalic.otf') format('otf');
     font-weight: 300;
     font-style: italic;
 }
@@ -19,7 +21,8 @@
 @font-face {
     font-family: 'Geometria', sans-serif;
     src: url('fonts/geometria/Geometria-HeavyItalic.woff2') format('woff2'), 
-         url('fonts/geometria/Geometria-HeavyItalic.woff') format('woff');
+            url('fonts/geometria/Geometria-HeavyItalic.woff') format('woff'),
+            url('fonts/geometria/Geometria-HeavyItalic.otf') format('otf');
     font-weight: 900;
     font-style: italic;
 }
@@ -27,7 +30,8 @@
 @font-face {
     font-family: 'Philosopher', sans-serif;
     src: url('fonts/philosopher/Philosopher-Regular.woff2') format('woff2'), 
-         url('fonts/philosopher/Philosopher-Regular.woff') format('woff');
+            url('fonts/philosopher/Philosopher-Regular.woff') format('woff'),
+            url('fonts/philosopher/Philosopher-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -35,7 +39,8 @@
 @font-face {
     font-family: 'Philosopher', sans-serif;
     src: url('fonts/philosopher/Philosopher-Italic.woff2') format('woff2'), 
-         url('fonts/philosopher/Philosopher-Italic.woff') format('woff');
+            url('fonts/philosopher/Philosopher-Italic.woff') format('woff'),
+            url('fonts/philosopher/Philosopher-Italic.ttf') format('ttf');
     font-weight: normal;
     font-style: italic;
 }
@@ -43,7 +48,9 @@
 @font-face {
     font-family: 'Philosopher', sans-serif;
     src: url('fonts/philosopher/Philosopher-Bold.woff2') format('woff2'), 
-         url('fonts/philosopher/Philosopher-Bold.woff') format('woff');
+            url('fonts/philosopher/Philosopher-Bold.woff') format('woff'),
+            url('fonts/philosopher/Philosopher-Bold.ttf') format('ttf');
+    font-weight: bold;
     font-weight: bold;
     font-style: normal;
 }
