@@ -38,7 +38,7 @@
 
 @font-face {
     font-display: swap;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Philosopher', serif;
     src: local('Philosopher'), url('/fonts/philosopher/Philosopher.woff2') format('woff2'),
         url('/fonts/philosopher/Philosopher.woff') format('woff');
     font-weight: normal;
@@ -47,7 +47,7 @@
 
 @font-face {
     font-display: swap;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Philosopher', serif;
     src: local('Philosopher'), url('/fonts/philosopher/Philosopher-Italic.woff2') format('woff2'),
         url('/fonts/philosopher/Philosopher-Italic.woff') format('woff');
     font-weight: normal;
@@ -56,7 +56,7 @@
 
 @font-face {
     font-display: swap;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Philosopher', serif;
     src: local('Philosopher'), url('/fonts/philosopher/Philosopher-Bold.woff2') format('woff2'),
         url('/fonts/philosopher/Philosopher-Bold.woff') format('woff');
     font-weight: bold;
@@ -218,7 +218,8 @@ body {
 
 .left-text p {
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
     display: inline-block;
     margin: 0;
     font-family: 'Geometria', sans-serif;
@@ -396,7 +397,8 @@ body {
 
 .block1__number-51 {
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
     font-family: 'Geometria', sans-serif;
     font-weight: 900;
     font-size: 28px;
@@ -439,8 +441,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 227px;
 }
 
@@ -457,7 +464,7 @@ body {
 }
 
 .main__title p {
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Philosopher', serif;
     font-weight: normal;
     font-style: italic;
     font-size: 9px;
@@ -467,7 +474,8 @@ body {
     text-transform: lowercase;
     display: inline-block;
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
     margin: 0;
     position: absolute;
     top: 385px;
@@ -523,12 +531,14 @@ body {
 .gallery__picture {
     opacity: 0;
     -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
     transition: all ease 0.5s;
 }
 
 .gallery__static-picture {
     opacity: 0;
     -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
 }
 
@@ -550,8 +560,10 @@ body {
 
 .block2__btn svg:active {
     -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+            -ms-transform: scale(0.5);
+        transform: scale(0.5);
     -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
 }
 
@@ -773,7 +785,8 @@ body {
     .block1__trapeze {
         width: 100%;
         -webkit-transform: rotate(90deg);
-                transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
         top: -179px;
         left: 210px;
     }
@@ -822,7 +835,8 @@ body {
         top: 245px;
         right: -74px;
         -webkit-transform: rotate(45deg);
-                transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
         padding: 0;
         -webkit-box-shadow: none;
                 box-shadow: none
@@ -845,17 +859,18 @@ body {
 
     .rect__big {
         -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-        font-family: Geometria;
+                -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        position: absolute;
+        right: 106px;
+        top: 62px;
+        font-family: 'Geometria', sans-serif;
         font-weight: 900;
         font-style: italic;
         font-size: 20px;
         letter-spacing: 0.1em;
         text-align: left;
         color: #000;
-        position: absolute;
-        right: 106px;
-        top: 62px;
     }
 
     .footer {
@@ -871,7 +886,8 @@ body {
         top: 0;
         left: 50%;
         -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     }
 
     .main__title p {
