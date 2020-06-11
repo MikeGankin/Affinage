@@ -1,65 +1,92 @@
-/* Общие стили. Каркас */
+/* Общие стили. Каркас */ 
 
 @font-face {
-    font-display: swap;
-    font-family: 'Geometria', sans-serif;
-    src: local('Geometria'), url('/fonts/geometria/Geometria.woff2') format('woff2'),
-        url('/fonts/geometria/Geometria.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Geometria';
+    src: local('Geometria Regular'), local('Geometria-Regular'),
+        url('/fonts/geometria/Geometria-Regular.woff2') format('woff2'),
+        url('/fonts/geometria/Geometria-Regular.woff') format('woff'),
+        url('/fonts/geometria/Geometria-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Geometria', sans-serif;
-    src: local('Geometria'), url('/fonts/geometria/Geometria-Medium.woff2') format('woff2'),
-        url('/fonts/geometria/Geometria-Medium.woff') format('woff');
+    font-family: 'Geometria';
+    src: local('Geometria Medium'), local('Geometria-Medium'),
+        url('/fonts/geometria/Geometria-Medium.woff2') format('woff2'),
+        url('/fonts/geometria/Geometria-Medium.woff') format('woff'),
+        url('/fonts/geometria/Geometria-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Geometria', sans-serif;
-    src: local('Geometria'), url('/fonts/geometria/Geometria-LightItalic.woff2') format('woff2'),
-        url('/fonts/geometria/Geometria-LightItalic.woff') format('woff');
+    font-family: 'Geometria';
+    src: local('Geometria Light'), local('Geometria-Light'),
+        url('/fonts/geometria/Geometria-Light.woff2') format('woff2'),
+        url('/fonts/geometria/Geometria-Light.woff') format('woff'),
+        url('/fonts/geometria/Geometria-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: local('Geometria Light Italic'), local('Geometria-Light-Italic'),
+        url('/fonts/geometria/Geometria-LightItalic.woff2') format('woff2'),
+        url('/fonts/geometria/Geometria-LightItalic.woff') format('woff'),
+        url('/fonts/geometria/Geometria-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Geometria', sans-serif;
-    src: local('Geometria'), url('/fonts/geometria/Geometria-HeavyItalic.woff2') format('woff2'),
-        url('/fonts/geometria/Geometria-HeavyItalic.woff') format('woff');
+    font-family: 'Geometria';
+    src: local('Geometria Heavy'), local('Geometria-Heavy'),
+        url('/fonts/geometria/Geometria-Heavy.woff2') format('woff2'),
+        url('/fonts/geometria/Geometria-Heavy.woff') format('woff'),
+        url('/fonts/geometria/Geometria-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: local('Geometria Heavy Italic'), local('Geometria-Heavy-Italic'),
+        url('/fonts/geometria/Geometria-HeavyItalic/Geometria-HeavyItalic.woff2') format('woff2'),
+        url('/fonts/geometria/Geometria-HeavyItalic.woff') format('woff'),
+        url('/fonts/geometria/Geometria-HeavyItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Philosopher', serif;
-    src: local('Philosopher'), url('/fonts/philosopher/Philosopher.woff2') format('woff2'),
-        url('/fonts/philosopher/Philosopher.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Philosopher';
+    src: local('Philosopher Regular'), local('Philosopher-Regular'),
+        url('/fonts/philosopher/Philosopher-Regular.woff2') format('woff2'),
+        url('/fonts/philosopher/Philosopher-Regular.woff') format('woff'),
+        url('/fonts/philosopher/Philosopher-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Philosopher', serif;
-    src: local('Philosopher'), url('/fonts/philosopher/Philosopher-Italic.woff2') format('woff2'),
-        url('/fonts/philosopher/Philosopher-Italic.woff') format('woff');
+    font-family: 'Philosopher';
+    src: local('Philosopher Italic'), local('Philosopher-Italic'),
+        url('/fonts/philosopher/Philosopher-Italic.woff2') format('woff2'),
+        url('/fonts/philosopher/Philosopher-Italic.woff') format('woff'),
+        url('/fonts/philosopher/Philosopher-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Philosopher', serif;
-    src: local('Philosopher'), url('/fonts/philosopher/Philosopher-Bold.woff2') format('woff2'),
-        url('/fonts/philosopher/Philosopher-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Philosopher';
+    src: local('Philosopher Bold'), local('Philosopher-Bold'),
+        url('/fonts/philosopher/Philosopher-Bold.woff2') format('woff2'),
+        url('/fonts/philosopher/Philosopher-Bold.woff') format('woff'),
+        url('/fonts/philosopher/Philosopher-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -74,6 +101,17 @@ body {
     color: #000;
     background-color: #fff;
 }
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
   
 /* Стилизация контента */
 
@@ -81,6 +119,7 @@ body {
     width: 1440px;
     position: relative;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .content {
@@ -90,7 +129,7 @@ body {
 
 .bg-left {
     width: 50%;
-    min-height: 800px;
+    min-height: 811px;
     position: fixed;
     left: 0;
     top: 0;
@@ -111,7 +150,7 @@ body {
 
 .bg-right {
     width: 50%;
-    min-height: 800px;
+    min-height: 811px;
     position: fixed;
     right: 0;
     top: 0;
@@ -139,7 +178,13 @@ body {
     height: 23px;
 }
 
-.header__burger {
+.header__logo svg {
+    width: 23px;
+    height: 23px;
+}
+
+.header__burger,
+.modal__close {
     width: 54px;
     height: 54px;
     top: 65px;
@@ -148,21 +193,46 @@ body {
     background-color: transparent;
     position: absolute;
     padding: 0;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.header__burger svg {
+    width: 54px;
+    height: 54px;
+}
+
+.modal__close {
+    top: 99px;
+    right: 72px;
+    background-color: transparent;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 
 .burger__rect1,
 .burger__rect2,
-.burger__rect3 {
+.burger__rect3,
+.close__rect1,
+.close__rect2,
+.close__rect3  {
     display: block;
     width: 20px;
     height: 2px;
     background-color: #000;
     position: absolute;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 
-.burger__rect1 {
+.burger__rect1,
+.close__rect1 {
     top: 20px;
     right: 17px;
+}
+
+.close__rect1 {
+    top: 50%;
 }
 
 .burger__rect2 {
@@ -170,9 +240,14 @@ body {
     right: 17px;
 }
 
-.burger__rect3 {
+.burger__rect3,
+.close__rect3 {
     top: 32px;
     right: 17px;
+}
+
+.close__rect3 {
+    top: 50%;
 }
 
 .main {
@@ -186,7 +261,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: -22px;
+    margin-bottom: -23px;
 }
 
 .main__blocks {
@@ -218,7 +293,6 @@ body {
 
 .left-text p {
     -webkit-transform: rotate(-90deg);
-            -ms-transform: rotate(-90deg);
         transform: rotate(-90deg);
     display: inline-block;
     margin: 0;
@@ -260,6 +334,8 @@ body {
     top: 169px;
     left: 269px;
     z-index: 3;
+    width: 180px;
+    height: 282px;
 }
 
 .main__block2 {
@@ -286,7 +362,9 @@ body {
     position: absolute;
     top: 32px;
     left: 86px;
-    z-index: 3; 
+    z-index: 3;
+    width: 100px;
+    height: 100px; 
 }
 
 .block2__circle-text {
@@ -323,6 +401,11 @@ body {
     padding-bottom: 30px;
     padding-left: 20px;  
     z-index: 2;  
+}
+
+.block2__btn svg {
+    width: 20px;
+    height: 36px;
 }
 
 .rect__big {
@@ -397,7 +480,6 @@ body {
 
 .block1__number-51 {
     -webkit-transform: rotate(-90deg);
-            -ms-transform: rotate(-90deg);
         transform: rotate(-90deg);
     font-family: 'Geometria', sans-serif;
     font-weight: 900;
@@ -456,11 +538,15 @@ body {
     margin-bottom: 106px;
     position: relative;
     z-index: 4;
+    width: 992px;
+    height: 152px;
 }
 
 .main__sign {
     position: relative;
-    z-index: 4; 
+    z-index: 4;
+    width: 213px;
+    height: 134px; 
 }
 
 .main__title p {
@@ -474,7 +560,6 @@ body {
     text-transform: lowercase;
     display: inline-block;
     -webkit-transform: rotate(-90deg);
-            -ms-transform: rotate(-90deg);
         transform: rotate(-90deg);
     margin: 0;
     position: absolute;
@@ -485,31 +570,34 @@ body {
 
 .block2__letter--a {
     top: -130px;
-    right: 319px;
+    right: 321px;
     position: absolute;
+    width: 61px;
+    height: 80px;
 }
 
 .block2__letter--e {
     top: -48px;
-    right: 154px;
+    right: 156px;
     position: absolute;
     z-index: -1;
+    width: 51px;
+    height: 80px;
 }
 
 .block2__letter--g {
     top: 30px;
-    right: 234px;
+    right: 235px;
     position: absolute;
     z-index: 1;
+    width: 62px;
+    height: 80px;
 }
 
 .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
 }
@@ -518,8 +606,48 @@ body {
     margin-left: -25px;
 }
 
+.footer__left svg {
+    width: 345px;
+    height: 114px;
+}
+
 .footer__right {
     margin-left: -44px;
+    margin-top: 28px;
+}
+
+.footer__right svg {
+    width: 293px;
+    height: 62px;
+}
+
+.modal {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:#f7e611;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.modal__text {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Geometria', sans-serif;
+    font-weight: 500;
+    font-size: 67px;
+    letter-spacing: 0.1em;
+    line-height: 56px;
+    color: #fff;
 }
 
 /* Интерактивные классы */
@@ -531,14 +659,12 @@ body {
 .gallery__picture {
     opacity: 0;
     -webkit-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
     transition: all ease 0.5s;
 }
 
 .gallery__static-picture {
     opacity: 0;
     -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
 }
 
@@ -548,6 +674,11 @@ body {
 
 .active {
     display: block;
+}
+
+.modal__close:hover {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
 }
 
 .header__logo:hover {
@@ -560,11 +691,14 @@ body {
 
 .block2__btn svg:active {
     -webkit-transform: scale(0.5);
-            -ms-transform: scale(0.5);
         transform: scale(0.5);
     -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
+}
+
+.header__burger:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 .footer__sign {
@@ -574,6 +708,37 @@ body {
 .block2__triangle-stroke,
 .block2__triangle-fill {
     display: none;
+    width: 24px;
+    height: 24px;
+}
+
+
+.modal-opened {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+}
+
+.modal-closed {
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+}
+
+.modal__text {
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+}
+
+.modal__text:hover {
+    color: #000;
+}
+
+.fadeIn {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+    opacity: 1;
 }
 
 /* Медиа выражения */
@@ -594,6 +759,10 @@ body {
 
     .main__blocks {
         width: 81%;
+    }
+
+    .modal__text {
+        line-height: 70px;
     }
 
     .main__block2 {
@@ -625,11 +794,11 @@ body {
     }
 
     .bg-right {
-        height: 950px;
+        height: 937px;
     }
 
     .bg-left {
-        height: 950px;
+        height: 937px;
     }
 
     .footer {
@@ -653,11 +822,14 @@ body {
     }
 
     .main__sign {
-        width: 170px;
+        -webkit-transform: scale(0.7);
+                transform: scale(0.7);
     }
 
     .main__logo {
         margin-bottom: 115px;
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
     }
 
     .block2__btn--left {
@@ -696,25 +868,28 @@ body {
     }
 
     .main__title p {
-        top: 452px;
-        left: 32px;
+        top: 448px;
+        left: 69px;
     }
 
     .block2__circle {
         top: 0;
         left: 10px;
-        width: 80px;
+        -webkit-transform: scale(0.7);
+                transform: scale(0.7);
     }
 
     .block2__circle-text {
-        top: 33px;
-        left: 24px;
+        top: 32px;
+        left: 39px;
+        font-size: 14px;
     }
 
     .block1__trapeze {
-        width: 100px;
-        top: 250px;
-        left: 150px;
+        -webkit-transform: scale(0.6);
+                transform: scale(0.6);
+        top: 230px;
+        left: 142px;
     }
 }
 
@@ -769,11 +944,20 @@ body {
         right: -16px;
     }
 
+    .modal__close {
+        top: -1px;
+        right: 2px;
+    }
 
     .main__block1 {
         width: 85.5%;
         top: -13px;
         left: -39px;
+    }
+
+    .modal__text {
+        font-size: 27px;
+        line-height: 35px;
     }
 
     .main__block2 {
@@ -785,7 +969,6 @@ body {
     .block1__trapeze {
         width: 100%;
         -webkit-transform: rotate(90deg);
-                -ms-transform: rotate(90deg);
             transform: rotate(90deg);
         top: -179px;
         left: 210px;
@@ -800,22 +983,24 @@ body {
     }
 
     .block2__letter--a {
-        width: 47px;
-        right: 204px;
+        width: 60px;
+        right: 198px;
         top: -27px;
         z-index: 2;
+        -webkit-transform: scale(0.75);
+                transform: scale(0.75);
     }
 
     .block2__letter--e {
         width: 40px;
         right: 62px;
-        top: -121px;
+        top: -120px;
     }
 
     .block2__letter--g {
         width: 46px;
         right: 126px;
-        top: -44px;
+        top: -43px;
         z-index: -1;
     }
 
@@ -835,7 +1020,6 @@ body {
         top: 245px;
         right: -74px;
         -webkit-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
             transform: rotate(45deg);
         padding: 0;
         -webkit-box-shadow: none;
@@ -845,21 +1029,20 @@ body {
     .block2__triangle-fill {
         display: block;
         position: absolute;
-        top: -23px;
+        top: -24px;
         right: 28px;
     }
 
     .block2__triangle-stroke {
         display: block;
         position: absolute;
-        bottom: 29px;
-        left: 44px;
+        bottom: 30px;
+        left: 45px;
         z-index: 2;
     }
 
     .rect__big {
         -webkit-transform: rotate(-45deg);
-                -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
         position: absolute;
         right: 106px;
@@ -883,10 +1066,9 @@ body {
         display: block;
         width: 144px;
         position: absolute;
-        top: 0;
+        top: -8px;
         left: 50%;
         -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     }
 
@@ -894,6 +1076,8 @@ body {
         top: 143px;
         left: -20px; 
     }
+
+
 }
 
 @media (max-width: 320px) { 
