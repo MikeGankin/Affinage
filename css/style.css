@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'Geometria';
     src: local('Geometria Regular'), local('Geometria-Regular'),
-        url('/fonts/geometria/Geometria-Regular.woff2') format('woff2'),
+        url('fonts/geometria/Geometria-Regular.woff2') format('woff2'),
         url('/fonts/geometria/Geometria-Regular.woff') format('woff'),
         url('/fonts/geometria/Geometria-Regular.ttf') format('truetype');
     font-weight: 400;
@@ -13,9 +13,9 @@
 @font-face {
     font-family: 'Geometria';
     src: local('Geometria Medium'), local('Geometria-Medium'),
-        url('/fonts/geometria/Geometria-Medium.woff2') format('woff2'),
-        url('/fonts/geometria/Geometria-Medium.woff') format('woff'),
-        url('/fonts/geometria/Geometria-Medium.ttf') format('truetype');
+        url('fonts/geometria/Geometria-Medium.woff2') format('woff2'),
+        url('fonts/geometria/Geometria-Medium.woff') format('woff'),
+        url('fonts/geometria/Geometria-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -23,9 +23,9 @@
 @font-face {
     font-family: 'Geometria';
     src: local('Geometria Light'), local('Geometria-Light'),
-        url('/fonts/geometria/Geometria-Light.woff2') format('woff2'),
-        url('/fonts/geometria/Geometria-Light.woff') format('woff'),
-        url('/fonts/geometria/Geometria-Light.ttf') format('truetype');
+        url('fonts/geometria/Geometria-Light.woff2') format('woff2'),
+        url('fonts/geometria/Geometria-Light.woff') format('woff'),
+        url('fonts/geometria/Geometria-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -33,9 +33,9 @@
 @font-face {
     font-family: 'Geometria';
     src: local('Geometria Light Italic'), local('Geometria-Light-Italic'),
-        url('/fonts/geometria/Geometria-LightItalic.woff2') format('woff2'),
-        url('/fonts/geometria/Geometria-LightItalic.woff') format('woff'),
-        url('/fonts/geometria/Geometria-LightItalic.ttf') format('truetype');
+        url('fonts/geometria/Geometria-LightItalic.woff2') format('woff2'),
+        url('fonts/geometria/Geometria-LightItalic.woff') format('woff'),
+        url('fonts/geometria/Geometria-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
@@ -43,9 +43,9 @@
 @font-face {
     font-family: 'Geometria';
     src: local('Geometria Heavy'), local('Geometria-Heavy'),
-        url('/fonts/geometria/Geometria-Heavy.woff2') format('woff2'),
-        url('/fonts/geometria/Geometria-Heavy.woff') format('woff'),
-        url('/fonts/geometria/Geometria-Heavy.ttf') format('truetype');
+        url('fonts/geometria/Geometria-Heavy.woff2') format('woff2'),
+        url('fonts/geometria/Geometria-Heavy.woff') format('woff'),
+        url('fonts/geometria/Geometria-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
@@ -53,9 +53,9 @@
 @font-face {
     font-family: 'Geometria';
     src: local('Geometria Heavy Italic'), local('Geometria-Heavy-Italic'),
-        url('/fonts/geometria/Geometria-HeavyItalic/Geometria-HeavyItalic.woff2') format('woff2'),
-        url('/fonts/geometria/Geometria-HeavyItalic.woff') format('woff'),
-        url('/fonts/geometria/Geometria-HeavyItalic.ttf') format('truetype');
+        url('fonts/geometria/Geometria-HeavyItalic/Geometria-HeavyItalic.woff2') format('woff2'),
+        url('fonts/geometria/Geometria-HeavyItalic.woff') format('woff'),
+        url('fonts/geometria/Geometria-HeavyItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
 }
@@ -63,9 +63,9 @@
 @font-face {
     font-family: 'Philosopher';
     src: local('Philosopher Regular'), local('Philosopher-Regular'),
-        url('/fonts/philosopher/Philosopher-Regular.woff2') format('woff2'),
-        url('/fonts/philosopher/Philosopher-Regular.woff') format('woff'),
-        url('/fonts/philosopher/Philosopher-Regular.ttf') format('truetype');
+        url('fonts/philosopher/Philosopher-Regular.woff2') format('woff2'),
+        url('fonts/philosopher/Philosopher-Regular.woff') format('woff'),
+        url('fonts/philosopher/Philosopher-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -73,9 +73,9 @@
 @font-face {
     font-family: 'Philosopher';
     src: local('Philosopher Italic'), local('Philosopher-Italic'),
-        url('/fonts/philosopher/Philosopher-Italic.woff2') format('woff2'),
-        url('/fonts/philosopher/Philosopher-Italic.woff') format('woff'),
-        url('/fonts/philosopher/Philosopher-Italic.ttf') format('truetype');
+        url('fonts/philosopher/Philosopher-Italic.woff2') format('woff2'),
+        url('fonts/philosopher/Philosopher-Italic.woff') format('woff'),
+        url('fonts/philosopher/Philosopher-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -83,9 +83,9 @@
 @font-face {
     font-family: 'Philosopher';
     src: local('Philosopher Bold'), local('Philosopher-Bold'),
-        url('/fonts/philosopher/Philosopher-Bold.woff2') format('woff2'),
-        url('/fonts/philosopher/Philosopher-Bold.woff') format('woff'),
-        url('/fonts/philosopher/Philosopher-Bold.ttf') format('truetype');
+        url('fonts/philosopher/Philosopher-Bold.woff2') format('woff2'),
+        url('fonts/philosopher/Philosopher-Bold.woff') format('woff'),
+        url('fonts/philosopher/Philosopher-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
